@@ -1,4 +1,4 @@
-# [Advent of Code y(2022) --- Day 1][0]
+# [Advent of Code 2022 --- Day 1][0]
 
 ## Calorie Counting
 
