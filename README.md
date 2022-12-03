@@ -10,4 +10,4 @@ statements are reproduced, solutions are my own.
 
 [0]: <https://adventofcode.com/2022/about> "About Advent of Code"
 [1]: </day-1/README.md> "Day 1 problem statement and solutions"
-[1]: </day-2/README.md> "Day 2 problem statement and solutions"
+[2]: </day-2/README.md> "Day 2 problem statement and solutions"
