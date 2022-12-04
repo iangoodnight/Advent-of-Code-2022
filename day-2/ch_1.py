@@ -261,7 +261,7 @@ def main():
     translated = translate_rounds(rounds)
     total_score = get_total_score(translated)
 
-    print(f"Total score: {total_score}")
+    print(f"Total score: {total_score}") # 11449
 
 
 if __name__ == '__main__':

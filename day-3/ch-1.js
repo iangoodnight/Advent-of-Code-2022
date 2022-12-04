@@ -179,5 +179,5 @@ function getSumDuplicatePriorities(packList = []) {
 
   const total = getSumDuplicatePriorities(parsed); // Find total
 
-  console.log(`Priority total: ${total}`);
+  console.log(`Priority total: ${total}`); // 7878
 })();
