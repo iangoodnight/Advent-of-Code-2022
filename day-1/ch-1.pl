@@ -76,6 +76,7 @@ carrying?
 
 use strict;
 use warnings;
+use Carp;
 use English qw( -no_match_vars );
 use List::Util qw ( sum );
 use Term::ANSIColor;
@@ -83,10 +84,10 @@ use Term::ANSIColor;
 our $VERSION = 0.0.1;
 
 if ( !( -p STDIN ) ) {    # Check for piped input and print usage if not found
-    print color('yellow'), "Usage:\n", color('reset') or die $!;
+    print color('yellow'), "Usage:\n", color('reset') or croak $ERRNO;
     print "\t\$> ", color('green'), "cat input.txt | ./ch-1.pl\n",
       color('reset')
-      or die $!;
+      or croak $ERRNO;
     exit 0;
 }
 
@@ -108,4 +109,4 @@ for my $elf_arr_ref (@elves) {
 
 print 'The elf carrying the most calories is carrying ', color('green'),
   $high_calories, color('reset'), " total calories.\n"
-  or die $!;
+  or croak $ERRNO;    # 70369

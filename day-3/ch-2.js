@@ -166,5 +166,5 @@ function getSumDuplicatePriorities(groups = []) {
 
   const total = getSumDuplicatePriorities(parsed); // Find total
 
-  console.log(`Priority total: ${total}`);
+  console.log(`Priority total: ${total}`); // 2760
 })();

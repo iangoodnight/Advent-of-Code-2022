@@ -17,7 +17,7 @@ backups.
 
 In the example above, the top three Elves are the fourth Elf (with `24000`
 Calories), then the third Elf (with `11000` Calories), then the fifth Elf (with
-`10000` Calories). The sum of the Calories carried by these three elves is 
+`10000` Calories). The sum of the Calories carried by these three elves is
 `45000`.
 
 Find the top three Elves carrying the most Calories.
@@ -28,6 +28,7 @@ Find the top three Elves carrying the most Calories.
 
 use strict;
 use warnings;
+use Carp;
 use English qw( -no_match_vars );
 use List::Util qw ( sum );
 use Term::ANSIColor;
@@ -35,9 +36,10 @@ use Term::ANSIColor;
 our $VERSION = 0.0.1;
 
 if ( !( -p STDIN ) ) {
-    print color('yellow'), "Usage:\n", color('reset') or die $!;
+    print color('yellow'), "Usage:\n", color('reset') or croak $ERRNO;
     print "\t\$> ", color('green'), "cat input.txt | ./ch-2.pl\n",
-      color('reset') or die $!;
+      color('reset')
+      or croak $ERRNO;
     exit 0;
 }
 
@@ -52,5 +54,5 @@ my @totals = reverse sort { $a <=> $b } map { sum @{$_}; } @elves;
 my @top_3        = @totals[ 0 .. 2 ];
 my $top_3_totals = sum @top_3;
 
-print 'Top three totaled: ', color('green'), $top_3_totals, "\n",
-  color('reset') or die $!;
+print 'Top three totaled: ', color('green'), $top_3_totals, "\n", color('reset')
+  or croak $ERRNO;            # 203002

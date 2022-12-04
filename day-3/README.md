@@ -113,4 +113,4 @@ is the sum of the priorities of those item types?**
 
 [See my solution](/day-3/ch-2.js)
 
-[0]: https://adventofcode.com/2022/day/3 'Advent of Code - Day 2'
+[0]: https://adventofcode.com/2022/day/3 'Advent of Code - Day 3'
