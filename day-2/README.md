@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # [Advent of Code 2022 --- Day 2][0]
 
 ## Rock Paper Scissors
@@ -85,4 +87,4 @@ score be if everything goes exactly according to your strategy guide?**
 
 [See my solution](/day-2/ch_2.py)
 
-[0]: <https://adventofcode.com/2022/day/2> "Advent of Code - Day 2"
+[0]: https://adventofcode.com/2022/day/2 'Advent of Code - Day 2'
