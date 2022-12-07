@@ -58,7 +58,7 @@ sub main {
         exit 0;
     }
     my $message = do { local $RS = undef; <> };    # slurp
-    ## no critic (DotMatchAnything LineBoundaryMatching)
+
     my @characters = split qr{}, $message;         # split into list
 
     for my $i ( 0 .. $#characters - $MARKER_LENGTH - 1 ) {   # start cursor at 0

@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-## no critic (RequirePodSections)
+## no critic (PodSections DotMatchAnything LineBoundaryMatching)
 
 =begin comment
 
@@ -85,7 +85,7 @@ sub main {
             ( [[:lower:]] )     # and so on
             (?! \2 | \3 | \4 )
             ( [[:lower:]] )
-        )}msx
+        )}x
       )
     {
         my $index = index $message, $1;    # find index
