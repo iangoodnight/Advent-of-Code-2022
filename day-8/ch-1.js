@@ -157,6 +157,7 @@ function isTreeVisible(forest = [[]], [x, y] = [0, 0]) {
         if (isVisibleInForest([x, y])) totalVisibleTrees += 1;
       }
     }
+    // There are 1708 trees visible from the edge
     console.log(`There are ${totalVisibleTrees} trees visible from the edge`);
   } catch (error) {
     console.error(error);
