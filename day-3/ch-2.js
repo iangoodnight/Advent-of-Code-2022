@@ -60,7 +60,7 @@ const fs = require('fs');
 
 /** Reads a file and returns data as a single string
  * @param {string} path - Input file path
- * @returns {Promise} Promise object represts file content as a single string
+ * @returns {Promise} Promise object represents file content as a single string
  */
 function readFileInputAsync(path = './input.txt') {
   return new Promise((resolve, reject) => {

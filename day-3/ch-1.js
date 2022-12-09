@@ -68,8 +68,6 @@
 
 const fs = require('fs');
 
-const process = require('process');
-
 /** Reads a file and returns data as a single string
  * @param {string} path - Input file path
  * @returns {Promise} Promise object represts file content as a single string
