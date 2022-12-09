@@ -14,6 +14,7 @@ statements are reproduced, solutions are my own.
 | [5] | Lua        | &#9733; &#9733; |
 | [6] | Perl       | &#9733; &#9733; |
 | [7] | Python     | &#9733; &#9733; |
+| [8] | JavaScript | &#9733; &#9733; |
 
 [0]: https://adventofcode.com/2022/about 'About Advent of Code'
 [1]: /day-1/README.md 'Day 1 problem statement and solutions'
@@ -23,3 +24,4 @@ statements are reproduced, solutions are my own.
 [5]: /day-5/README.md 'Day 5 problem statement and solutions'
 [6]: /day-6/README.md 'Day 6 problem statement and solutions'
 [7]: /day-7/README.md 'Day 7 problem statement and solutions'
+[8]: /day-8/README.md 'Day 8 problem statement and solutions'
