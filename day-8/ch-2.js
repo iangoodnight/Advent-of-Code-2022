@@ -181,7 +181,7 @@ function getScenicScore(forest = [[]], [x, y] = [0, 0]) {
       }
     }
     const maxScenicScore = Math.max(...forestScores);
-
+    // The highest scenic score possible is 504000   
     console.log(`The highest scenic score possible is ${maxScenicScore}`);
   } catch (error) {
     console.error(error);
